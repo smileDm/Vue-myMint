@@ -1,20 +1,32 @@
 <template>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide" v-for="str in listImg" :style="{ backgroundImage: 'url(' + str.url + ')' }"></div>
+    <div><!--需要在最外层包一个div，否则会报错-->
+        <!-- 固定在最顶部 -->
+        <mt-header title="我家小店儿" style='background-color: #fb8a2e'>  
+            <router-link to="/" slot="left">  
+                <mt-button icon="back" @click="handleClose">返回</mt-button>  
+            </router-link>  
+            <mt-button icon="more" slot="right" @click="more"></mt-button>  
+        </mt-header>
+        <!-- 轮播 -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" v-for="str in listImg" :style="{ backgroundImage: 'url(' + str.url + ')' }"></div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-white"></div>
         </div>
-        <div class="swiper-pagination swiper-pagination-white"></div>
     </div>
 </template>
 
-<script>
+<script>    
+    import { Header } from 'mint-ui';
     import Swiper from 'swiper';
     import 'swiper/dist/css/swiper.min.css';
-    // 通过props获取父组件传递过来的属性listImg 
+    // 通过props获取父组件传递过来的属性listImg （vue官方api）
     // mounted类似react中的componentDidMount方法，实例化swiper必须等到dom渲染完成才能操作
     export default {
         props: ['listImg'],
-        mounted() {
+        mounted() {  
+            /* 轮播 */
             console.log('mounted', this)
             var swiper = new Swiper('.swiper-container', {
                 pagination: '.swiper-pagination',
@@ -26,14 +38,24 @@
                     swiper.startAutoplay()
                 }
             });
-        }
+        },
+        methods: { 
+            /* 固定在顶部返回 */ 
+            handleClose: function(){  
+                console.log("返回")  
+            },  
+            /* 固定在顶部更多 */ 
+            more: function(){  
+                console.log("更多")  
+            }  
+        }  
     }
 </script>
 
 <!-- 
-	报错Cannot find module "less" !!!
-	需要安装 npm install less less-loader 
-	解决OK
+    报错Cannot find module "less" !!!
+    需要安装 npm install less less-loader 
+    解决OK
 -->
 <style lang="less">
     .swiper-container {
