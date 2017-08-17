@@ -1,0 +1,82 @@
+*{
+	padding:0;
+	margin:0;
+}
+html{
+	font-size: 10px;/*10 ÷ 16 × 100% = 62.5%*/
+}
+ .close{
+ 	width: 2.5rem;
+ 	height:2.5rem;
+ 	margin-left: -92%;
+ } 
+ .logo{
+ 	width:5rem;
+ 	height: 5rem;
+ 	margin: 20% 0 20% 0;
+ }
+ .input{
+ 	border-bottom: 0.1rem solid #bfbfbf;
+ 	position: relative;
+	width: 20rem;
+	left: 50%;
+	margin:0 0 1rem -10rem;
+ }
+.phone_btn{
+	width: 4rem;
+	padding:0.2rem;
+	border: 0.1rem solid white;
+	color: white;
+	background-color: #bfbfbf;
+	margin-bottom: 0.5rem;
+}
+.shield_btn{
+	width: 4rem;
+	background-color: white;
+	border: 0.1rem solid #fff;
+	color: white;
+	margin-bottom: 0.5rem;
+}
+.login_btn{
+	width: 20rem;
+	background-color: #fb6133;
+}
+/* .other{
+	margin-top: 10rem;
+} */
+ .other{
+  display: block;
+  margin: 0 auto;
+  margin-top: 9rem;
+  width: 60%;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  color: #8A8A8A;
+  position: relative;
+} 
+/* :before 在每个.other元素的内容之前插入新内容：*/
+.other::before{ 
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  right: 75%;
+  height: 0.1rem;
+  transform: scaleY(.5);
+  background-color: #8a8a8a;
+}
+/* :after 在每个.other元素的内容之后插入新内容：*/
+.other::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  left: 75%;
+  height: 0.1rem;
+  transform: scaleY(.5);
+  background-color: #8a8a8a;
+} 
+.other_img{
+	margin-left: 2rem;
+}

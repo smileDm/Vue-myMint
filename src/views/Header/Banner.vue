@@ -1,5 +1,5 @@
 <template>
-    <div><!--需要在最外层包一个div，否则会报错-->
+    <div class="banner"><!--需要在最外层包一个div，否则会报错-->
         <!-- 固定在最顶部 -->
         <mt-header title="我家小店儿" style='background-color: #fb8a2e'>  
             <router-link to="/" slot="left">  
@@ -18,7 +18,6 @@
 </template>
 
 <script>    
-    import { Header } from 'mint-ui';
     import Swiper from 'swiper';
     import 'swiper/dist/css/swiper.min.css';
     // 通过props获取父组件传递过来的属性listImg （vue官方api）
@@ -58,6 +57,13 @@
     解决OK
 -->
 <style lang="less">
+    .banner{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
     .swiper-container {
         width: 100%;
         height: 10rem;

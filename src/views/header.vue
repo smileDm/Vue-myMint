@@ -1,6 +1,8 @@
 <template>
   <div>
    <app-banner :listImg="listImg"></app-banner>
+   <!-- <app-navbar></app-navbar> -->
+   <app-goods></app-goods> 
   </div>
 </template>
 
@@ -13,6 +15,10 @@
  import c from '../assets/img/home/banner3.jpg'
  import d from '../assets/img/home/banner4.jpg'
  import e from '../assets/img/home/banner5.jpg'
+ //导入Navbar组件
+/* import Navbar from './Header/Navbar.vue'*/
+ //导入Goods组件
+ import Goods from './Header/Goods.vue'
 
      export default {
         data() {
@@ -23,7 +29,9 @@
             }
         },
         components: {
-            'app-banner': Banner
+            'app-banner': Banner,
+            /*'app-navbar': Navbar,*/
+            'app-goods':Goods
         }
     };
 </script>
