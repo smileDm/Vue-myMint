@@ -1,15 +1,17 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-//import Header from './../views/header'
-import Login from './../views/Login'
+import Zhuye from '../views/Zhuye/Zhuye'
+import Personal from '../views/Personal/Personal'
+//import Login from './../views/Login'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      //path: '/', name: 'Header', component: Header
-      path: '/', name: 'Login', component: Login
-    }
+      path: '/Zhuye', name: 'Zhuye', component: Zhuye
+      //path: '/', name: 'Login', component: Login
+    },
+    { path:'/Personal',name:'Personal', component:Personal }
   ]
 })
