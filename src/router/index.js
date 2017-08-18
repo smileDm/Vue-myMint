@@ -4,6 +4,7 @@ import Hello from '../components/Hello'
 import Zhuye from '../views/Zhuye/Zhuye'
 import Mall from  '../views/Mall/Mall'
 import Personal from '../views/Personal/Personal'
+import MallSearch from '../views/Mall/MallSearch'
 //import Login from './../views/Login'
 
 Vue.use(Router)
@@ -20,6 +21,7 @@ export default new Router({
       //path: '/', name: 'Login', component: Login
     },
     { path:'/Mall',name: 'Mall', component: Mall },
-    { path:'/Personal',name:'Personal', component:Personal }
+    { path:'/Personal',name:'Personal', component:Personal },
+    { path:'/MallSearch',name:'MallSearch', component:MallSearch }
   ]
 })
