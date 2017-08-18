@@ -3,7 +3,7 @@
     	<div class="hot">
     		<div class="hot_title">
     			<span class="activity">热门活动</span>
-    			<span class="more">查看全部</span>
+    			<span class="more">查看全部 ></span>
     		</div>
     		<div class="hot_content">
     			<span class="items">
@@ -91,21 +91,21 @@
 		}
 	    .goods{
 	        position: absolute;
-	        top: 30%;
+	        top: 35.5%;
 	        bottom: 9%;
 	        left: 0;
 	        right: 0;
 	        overflow-y: scroll;
 	        overflow-x: hidden;
+	        padding-top:4%;
 	    }
-	
 	    .hot .hot_content{
-	    	margin:0.5rem 0 0 1rem;
+	    	margin:0 0 1rem 1rem;
 	    	float:left;
 	    	width:100%;
 	    }
 	    .hot_title{
-	    	margin:0 1rem 0 1rem;
+	    	margin:0 1rem 1rem 1rem;
 	    	font-size:1.5rem;
 	    }
 	    .hot_title .activity{
@@ -126,6 +126,9 @@
 	    	height:60%;
 	    	float:left;
 	    }
+	    .left_content,.more{
+	    	color:#666;
+	    }
 	    
 	    .left{
 	    	margin-top:0.5rem;
@@ -133,7 +136,9 @@
 	    .left_title{
 	    	font-weight:bold;
 	    	margin-bottom:0.5rem;
+	    	font-size:1.4rem;
 	    }
+
 	    
 
 	    .title_img{

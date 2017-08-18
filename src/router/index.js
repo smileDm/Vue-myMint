@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '../components/Hello'
 import Zhuye from '../views/Zhuye/Zhuye'
+import Mall from  '../views/Mall/Mall'
 import Personal from '../views/Personal/Personal'
 //import Login from './../views/Login'
 
@@ -18,6 +19,7 @@ export default new Router({
       path: '/Zhuye', name: 'Zhuye', component: Zhuye
       //path: '/', name: 'Login', component: Login
     },
+    { path:'/Mall',name: 'Mall', component: Mall },
     { path:'/Personal',name:'Personal', component:Personal }
   ]
 })

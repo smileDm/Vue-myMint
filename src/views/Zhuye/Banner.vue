@@ -1,11 +1,5 @@
 <template>
     <div class="banner"><!--需要在最外层包一个div，否则会报错-->
-        <!-- 固定在最顶部 -->
-        <mt-header title="我家小店儿" style='background-color: #fb8a2e'>  
-            <router-link to="/" slot="left">  
-            </router-link>  
-            <mt-button icon="more" slot="right" @click="more"></mt-button>  
-        </mt-header>
         <!-- 轮播 -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -54,15 +48,15 @@
 -->
 <style lang="less">
     .banner{
-        position: fixed;
-        top: 0;
+        position:fixed;
+        top: 9.2%;
         right: 0;
         left: 0;
         bottom: 0;
     }
     .swiper-container {
         width: 100%;
-        height: 10rem;
+        height: 30%;
         .swiper-wrapper {
             width: 100%;
             height: 100%;

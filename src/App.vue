@@ -7,6 +7,11 @@
         <img slot="icon-active" src="./assets/img/tabbar/zhuye_orange.png">
         主页
       </m-tabbar-item>
+      <m-tabbar-item id="Mall" isRouter>
+        <img slot="icon-normal" src="./assets/img/tabbar/mall_gray.png">
+        <img slot="icon-active" src="./assets/img/tabbar/mall_orange.png">
+        商城
+      </m-tabbar-item>
       <m-tabbar-item id="Personal" isRouter>
         <img slot="icon-normal" src="./assets/img/tabbar/me_gray.png">
         <img slot="icon-active" src="./assets/img/tabbar/me_orange.png">
