@@ -1,9 +1,12 @@
 <template>
-  <div>
-  <app-search></app-search>
+  <div id="index">
+   <app-search></app-search>
    <app-banner :listImg="listImg"></app-banner>
    <!-- <app-navbar></app-navbar> -->
    <app-goods></app-goods> 
+   <app-tabbar></app-tabbar>
+
+   
   </div>
 </template>
 
@@ -22,6 +25,7 @@
 /* import Navbar from './Header/Navbar.vue'*/
  //导入Goods组件
  import Goods from './Goods'
+ import Tabbar1 from './Tabbar1'
 
      export default {
         data() {
@@ -35,7 +39,13 @@
         	'app-search':Search,
             'app-banner': Banner,
             /*'app-navbar': Navbar,*/
-            'app-goods':Goods
+            'app-goods':Goods,
+            'app-tabbar':Tabbar1
         }
-    };
+    }
 </script>
+
+<style scoped>
+
+
+</style>

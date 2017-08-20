@@ -92,7 +92,7 @@
 	    .goods{
 	        position: absolute;
 	        top: 35.5%;
-	        bottom: 9%;
+	        bottom: 10%;
 	        left: 0;
 	        right: 0;
 	        overflow-y: scroll;

@@ -26,7 +26,7 @@
 14 verbose stack     at maybeClose (internal/child_process.js:891:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
 15 verbose pkgid mymint@1.0.0
-16 verbose cwd F:\vue移动端\New最新New\8.19\Vue-myMint
+16 verbose cwd F:\vue移动端\New最新New\8.19\Vue-myMint\src
 17 error Windows_NT 6.1.7601
 18 error argv "D:\\Program Files\\nodejs\\node.exe" "D:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "dev"
 19 error node v6.11.1

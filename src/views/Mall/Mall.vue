@@ -9,12 +9,15 @@
 	    <!-- 商城左边部分 -->
 	    <app-leftmall></app-leftmall>
 	    <app-watch></app-watch>
+	    <app-tabbar></app-tabbar>
 	</div>
 </template>
 
 <script>
 	import LeftMall from './LeftMall'
 	import watch from './watch'
+	import Tabbar1 from '../../views/Zhuye/Tabbar1'
+
 	export default{
 		methods: {  
 		    /* 固定在顶部更多 */ 
@@ -24,7 +27,8 @@
 		},
 		components:{
 			'app-leftmall':LeftMall,
-			'app-watch':watch
+			'app-watch':watch,
+			'app-tabbar':Tabbar1
 		}
 	}
 </script>

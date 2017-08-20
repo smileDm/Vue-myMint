@@ -5,6 +5,8 @@ import Zhuye from '../views/Zhuye/Zhuye'
 import Mall from  '../views/Mall/Mall'
 import Personal from '../views/Personal/Personal'
 import MallSearch from '../views/Mall/MallSearch'
+import Tabbar1 from '../views/Zhuye/Tabbar1'
+import MallReSearch from '../views/Mall/MallReSearch'
 //import Login from './../views/Login'
 
 Vue.use(Router)
@@ -22,6 +24,7 @@ export default new Router({
     },
     { path:'/Mall',name: 'Mall', component: Mall },
     { path:'/Personal',name:'Personal', component:Personal },
-    { path:'/MallSearch',name:'MallSearch', component:MallSearch }
+    { path:'/MallSearch',name:'MallSearch', component:MallSearch },
+    { path:'/MallReSearch',name:'MallReSearch', component:MallReSearch }
   ]
 })
