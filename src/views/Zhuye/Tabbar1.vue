@@ -48,7 +48,7 @@ export default{
 	}
 	.bottombar{
 	  width: 100%;
-		height: 55px;
+		height: 50px;
 	  display: flex;
 	  background-color: #fff;
 	}

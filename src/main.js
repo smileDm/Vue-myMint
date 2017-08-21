@@ -8,12 +8,15 @@ import router from './router'
 import store from './store'
 import Vuex from 'vuex'
 import axios from  'axios'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
 
 
 Vue.config.productionTip = false
 Vue.prototype.axios = axios
 Vue.use(MintUI)
 Vue.use(Vuex)
+Vue.use(ElementUI)
 
 /* eslint-disable no-new */
 new Vue({
