@@ -45,35 +45,32 @@
 
 
         <div class="goods_find">
-        	<img class="title_img" src="../../assets/img/home/hc1.jpg" type="text">
-        	<p class="title_p">你的屋子也要漂亮衣服</p>
+        	<img class="title_img" src="//img30.360buyimg.com/da/jfs/t6025/120/7184872764/67775/df771e1a/597b08f3N550caa32.jpg" type="text">
+        	<p class="title_p">做自己的女王专场</p>
         	<p class="like_p">
         		<span>
-        			大丁 | 
         			<img class="like_img" src="../../assets/img/home/like.png" type="text">
-        			666
+        			666+
         		</span>
         	</p>
         </div>
         <div class="goods_find">
-        	<img class="title_img" src="../../assets/img/home/hc1.jpg" type="text">
-        	<p class="title_p">你的屋子也要漂亮衣服</p>
+        	<img class="title_img" src="//img12.360buyimg.com/da/jfs/t7984/210/1053248984/151450/47a8cfff/59999e18N3fedc949.jpg" type="text">
+        	<p class="title_p">森宿大牌日专场</p>
         	<p class="like_p">
         		<span>
-        			大丁 | 
         			<img class="like_img" src="../../assets/img/home/like.png" type="text">
-        			666
+        			1000+
         		</span>
         	</p>
         </div>
         <div class="goods_find">
-        	<img class="title_img" src="../../assets/img/home/hc1.jpg" type="text">
-        	<p class="title_p">你的屋子也要漂亮衣服</p>
+        	<img class="title_img" src="//img20.360buyimg.com/da/jfs/t6931/341/1411624855/325688/a3d00cf6/59813e2fNce23b75f.jpg" type="text">
+        	<p class="title_p">花样职场专场</p>
         	<p class="like_p">
         		<span>
-        			大丁 | 
         			<img class="like_img" src="../../assets/img/home/like.png" type="text">
-        			666
+        			1200+
         		</span>
         	</p>
         </div>
@@ -91,7 +88,7 @@
 		}
 	    .goods{
 	        position: absolute;
-	        top: 35.5%;
+	        top: 36.5%;
 	        bottom: 10%;
 	        left: 0;
 	        right: 0;
@@ -138,12 +135,9 @@
 	    	margin-bottom:0.5rem;
 	    	font-size:1.4rem;
 	    }
-
-	    
-
 	    .title_img{
 	    	width:100%;
-	    	height:15%;
+	    	height:40%;
 	    }
 	    .title_p{
 	    	text-align:center;
@@ -157,7 +151,8 @@
 	    .like_p{
 	    	text-align:center;
 	    	margin:1rem 0 1rem 0;
-	    	font-size:1.2rem;
+	    	font-size:1.4rem;
+	    	color:#ff5c5c;
 	    }
-    
+
 </style>

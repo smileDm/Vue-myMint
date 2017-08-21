@@ -40,68 +40,24 @@ import {mapActions} from 'vuex'
         contents: [
           {
             url: '',
-            text: '父亲节'
+            text: '韩都衣舍'
           },
           {
             url: '',
-            text: '手机壳'
+            text: '夏装'
           },
           {
             url: '',
-            text: '父亲'
+            text: '连衣裙'
           },
           {
             url: '',
-            text: '伞'
+            text: 'T恤'
           },
           {
             url: '',
-            text: '情侣'
-          },
-          {
-            url: '',
-            text: '水杯'
-          },
-          {
-              url: '',
-              text: '面膜'
-          },
-          {
-            url: '',
-            text: '钢笔'
-          },
-          {
-            url: '',
-            text: '礼物'
-          },
-          {
-            url: '',
-            text: '手表'
-          },
-          {
-            url: '',
-            text: '礼物'
-          },
-          {
-            url: '',
-            text: '口红'
-          },
-          {
-            url: '',
-            text: '香水'
-          },
-          {
-            url: '',
-            text: '生日礼物'
-          },
-          {
-            url: '',
-            text: '帽子'
-          },
-          {
-            url: '',
-            text: '杯子'
-          },
+            text: '2017韩版女装'
+          }
         ]
       }
     },
