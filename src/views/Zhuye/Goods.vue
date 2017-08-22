@@ -82,7 +82,7 @@
 </script>
 
 
-<style lang="less">
+<style lang="less" scoped>
 	html{
 			font-size:10px;
 		}
@@ -103,7 +103,8 @@
 	    }
 	    .hot_title{
 	    	margin:0 1rem 1rem 1rem;
-	    	font-size:1.5rem;
+	    	/*font-size:1.5rem;*/
+	    	font-size:1rem;
 	    }
 	    .hot_title .activity{
 	    	font-weight:bold;
@@ -125,6 +126,7 @@
 	    }
 	    .left_content,.more{
 	    	color:#666;
+	    	font-size:0.8rem;
 	    }
 	    
 	    .left{
@@ -133,7 +135,8 @@
 	    .left_title{
 	    	font-weight:bold;
 	    	margin-bottom:0.5rem;
-	    	font-size:1.4rem;
+	    	/*font-size:1.4rem;*/
+	    	font-size:0.8rem;
 	    }
 	    .title_img{
 	    	width:100%;
@@ -142,16 +145,19 @@
 	    .title_p{
 	    	text-align:center;
 	    	margin:1rem 0 1rem 0;
-	    	font-size:1.6rem;
+	    	/*font-size:1.6rem;*/
+	    	font-size:1rem;
 	    }
 	    .like_img{
 	    	width:1rem;
 	    	height:1rem;
+	    	margin:0 0 -0.2rem 0;
 	    }
 	    .like_p{
 	    	text-align:center;
 	    	margin:1rem 0 1rem 0;
-	    	font-size:1.4rem;
+	    	/*font-size:1.4rem;*/
+	    	font-size:0.4rem;
 	    	color:#ff5c5c;
 	    }
 

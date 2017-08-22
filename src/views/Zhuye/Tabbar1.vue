@@ -45,6 +45,7 @@ export default{
 		width: 100%;
 		height: 50px;
 		z-index: 10;
+		font-size:0.4rem;
 	}
 	.bottombar{
 	  width: 100%;
@@ -94,5 +95,6 @@ export default{
 	.router-link-active .home_text{
 	  color: #fb8a2e;
 		text-align: center;
+		font-size:0.4rem;
 	}
 </style>

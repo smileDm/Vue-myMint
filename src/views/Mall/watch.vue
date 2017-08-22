@@ -14,7 +14,7 @@
 </template>
 <script>
 //import watchsearch from '../components/watchsearch'
-import LeftMall from './LeftMall'
+//import LeftMall from './LeftMall'
 export default {
   data (){
     return {
