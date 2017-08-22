@@ -10,14 +10,14 @@
 	    <!--<app-leftmall></app-leftmall>
 	    <app-watch></app-watch>-->
 	    <app-goods></app-goods>
-	    <app-tabbar></app-tabbar>
+	    <!-- <app-tabbar></app-tabbar> -->
 	</div>
 </template>
 
 <script>
 	//import LeftMall from './LeftMall'
 	//import watch from './watch'
-	import Tabbar1 from '../../views/Zhuye/Tabbar1'
+	/*import Tabbar1 from '../../views/Zhuye/Tabbar1'*/
 	import Goods from './Goods'
 
 	export default{
@@ -30,7 +30,7 @@
 		components:{
 			//'app-leftmall':LeftMall,
 			//'app-watch':watch,
-			'app-tabbar':Tabbar1,
+			/*'app-tabbar':Tabbar1,*/
 			'app-goods':Goods
 		}
 	}

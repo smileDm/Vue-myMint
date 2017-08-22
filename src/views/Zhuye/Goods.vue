@@ -3,41 +3,50 @@
     	<div class="hot">
     		<div class="hot_title">
     			<span class="activity">热门活动</span>
-    			<span class="more">查看全部 ></span>
+    			<router-link to="/Mall">
+    				<span class="more">查看全部 ></span>
+    			</router-link>
     		</div>
     		<div class="hot_content">
-    			<span class="items">
-    				<span class="left">
-    					<p class="left_title">发现好品牌</p>
-    					<p class="left_content">简约个性 设计</p>
+    			<router-link to="/Mall">
+    				<span class="items">
+    					<span class="left">
+    						<p class="left_title">发现好品牌</p>
+    						<p class="left_content">简约个性 设计</p>
+    					</span>
+    					<img src="//img11.360buyimg.com/n7/jfs/t3658/287/1096951163/143882/f774e94b/581c56e5N583ae75e.jpg">
     				</span>
-    				<img src="//img11.360buyimg.com/n7/jfs/t3658/287/1096951163/143882/f774e94b/581c56e5N583ae75e.jpg">
-    			</span>
-    			<span class="items">
-    				<span class="left">
-    					<p class="left_title">品牌新风尚</p>
-    					<p class="left_content">早秋搭配法则</p>
+    			</router-link>
+    			<router-link to="/Mall">
+    				<span class="items">
+    					<span class="left">
+    						<p class="left_title">品牌新风尚</p>
+    						<p class="left_content">早秋搭配法则</p>
+    					</span>
+    					<img src="//img13.360buyimg.com/mobilecms/s300x300_jfs/t6901/6/815157389/36405/8e28fdd7/5979ff7cN515a1bb1.jpg!q70.jpg">
     				</span>
-    				<img src="//img13.360buyimg.com/mobilecms/s300x300_jfs/t6901/6/815157389/36405/8e28fdd7/5979ff7cN515a1bb1.jpg!q70.jpg">
-    			</span>
+    			</router-link>
     			
     		</div>
     		<div class="hot_content">
-    			<span class="items">
-    				<span class="left">
-    					<p class="left_title">穿搭学院</p>
-    					<p class="left_content">不普通有腔调</p>
+    			<router-link to="/Mall">
+    				<span class="items">
+    					<span class="left">
+    						<p class="left_title">穿搭学院</p>
+    						<p class="left_content">不普通有腔调</p>
+    					</span>
+    					<img src="//img11.360buyimg.com/mobilecms/s300x300_jfs/t7891/115/314967738/25869/5047ac71/59919e04Ned43e43b.jpg!q70.jpg">
     				</span>
-    				<img src="//img11.360buyimg.com/mobilecms/s300x300_jfs/t7891/115/314967738/25869/5047ac71/59919e04Ned43e43b.jpg!q70.jpg">
-    			</span>
-    			<span class="items">
-    				<span class="left">
-    					<p class="left_title">点点精选</p>
-    					<p class="left_content">晒后修复攻略</p>
+    			</router-link>
+    			<router-link to="/Mall">
+    				<span class="items">
+    					<span class="left">
+    						<p class="left_title">点点精选</p>
+    						<p class="left_content">晒后修复攻略</p>
+    					</span>
+    					<img src="//img11.360buyimg.com/n1/jfs/t5458/203/1941199505/154006/2cfface4/591671c0N156b421c.jpg">
     				</span>
-    				<img src="//img11.360buyimg.com/n1/jfs/t5458/203/1941199505/154006/2cfface4/591671c0N156b421c.jpg">
-    			</span>
-    			
+    			</router-link>    			
     		</div>
     		
     	</div>
@@ -45,8 +54,10 @@
 
 
         <div class="goods_find">
-        	<img class="title_img" src="//img30.360buyimg.com/da/jfs/t6025/120/7184872764/67775/df771e1a/597b08f3N550caa32.jpg" type="text">
-        	<p class="title_p">做自己的女王专场</p>
+        	<router-link to="/Mall">
+        		<img class="title_img" src="//img30.360buyimg.com/da/jfs/t6025/120/7184872764/67775/df771e1a/597b08f3N550caa32.jpg" type="text">
+        		<p class="title_p">做自己的女王专场</p>
+        	</router-link>
         	<p class="like_p">
         		<span>
         			<img class="like_img" src="../../assets/img/home/like.png" type="text">
@@ -55,8 +66,10 @@
         	</p>
         </div>
         <div class="goods_find">
-        	<img class="title_img" src="//img12.360buyimg.com/da/jfs/t7984/210/1053248984/151450/47a8cfff/59999e18N3fedc949.jpg" type="text">
-        	<p class="title_p">森宿大牌日专场</p>
+        	<router-link to="/Mall">
+        		<img class="title_img" src="//img12.360buyimg.com/da/jfs/t7984/210/1053248984/151450/47a8cfff/59999e18N3fedc949.jpg" type="text">
+        		<p class="title_p">森宿大牌日专场</p>
+        	</router-link>
         	<p class="like_p">
         		<span>
         			<img class="like_img" src="../../assets/img/home/like.png" type="text">
@@ -65,8 +78,10 @@
         	</p>
         </div>
         <div class="goods_find">
-        	<img class="title_img" src="//img20.360buyimg.com/da/jfs/t6931/341/1411624855/325688/a3d00cf6/59813e2fNce23b75f.jpg" type="text">
-        	<p class="title_p">花样职场专场</p>
+        	<router-link to="/Mall">
+        		<img class="title_img" src="//img20.360buyimg.com/da/jfs/t6931/341/1411624855/325688/a3d00cf6/59813e2fNce23b75f.jpg" type="text">
+        		<p class="title_p">花样职场专场</p>
+        	</router-link>
         	<p class="like_p">
         		<span>
         			<img class="like_img" src="../../assets/img/home/like.png" type="text">
@@ -137,6 +152,7 @@
 	    	margin-bottom:0.5rem;
 	    	/*font-size:1.4rem;*/
 	    	font-size:0.8rem;
+	    	color: black;
 	    }
 	    .title_img{
 	    	width:100%;

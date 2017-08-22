@@ -151,7 +151,7 @@
     position: fixed
     left: 0
     top: 0
-    bottom: 48px
+    bottom: 0
     z-index: 30
     width: 100%
     background: #fff

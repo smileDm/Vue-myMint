@@ -173,13 +173,13 @@ export default {
     display: flex
     position: absolute
     top: 40px
-    bottom: 46px
+    bottom: 0px
     width: 100%
     overflow: hidden
     .menu-wrapper
       flex: 0 0 80px
       width: 80px
-      background: #e6e7e8
+      background: #f0f0f0
       .menu-item
         display: table
         height: 54px
