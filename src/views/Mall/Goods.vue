@@ -17,28 +17,30 @@
 				<li v-for="(item,index) in goods" class="food-list" ref="foodList">
 					<h1 class="title">{{item.name}}</h1>
 					
-						<div v-for="(food,index) in item.foods" class="food-item border-1px" @click="seeFood(food,$event)">
+						<div v-for="(food,index) in item.foods" class="food-item border-1px" @click="selectFood(food,$event)">
 							<div class="icon">
 								<img width="57" height="57" :src="food.icon">
 							</div>
 							<div class="content">
 								<div class="name">{{food.name}}</div>
-							                		
+							    <div class="price">20</div>           		
 							</div>
 						</div>
 					
 				</li>
 			</ul>
 		</div>
-		
-
-		
+		<router-link  to="/food">
+			<food :food="selectedFood" ref="food"></food>
+		</router-link>
 	</div>
+	
 </template>
 
 <script type="text/ecmascript-6">
 // 引入better-scroll
 import BScroll from 'better-scroll'
+import food from './food';
 
 export default {
 	props:['seller'],
@@ -51,7 +53,7 @@ export default {
 			goods:[],          //商品信息
 			listHeight:[],     //菜单列表元素
 			scrollY:0,         //食物列表滚动的高度实时计算
-			seeFoodinfo:{}	   //选中的商品用以查看商品详情
+			selectedFood: {}	   //选中的商品用以查看商品详情
 		}
 	},
 	created() {
@@ -59,8 +61,8 @@ export default {
 		this.classMap = ['decrease','discount','guarantee','invoice','special'];
 		//利用 mock.js 模拟的数据用来请求
 
-		this.$http.get('https://www.easy-mock.com/mock/596e2463a1d30433d836f112/ele/ele').then((response) => {
-
+		//this.$http.get('https://www.easy-mock.com/mock/596e2463a1d30433d836f112/ele/ele').then((response) => {
+		this.$http.get('http://www.easy-mock.com/mock/5993aee4a1d30433d863147b/goods/goods').then((response) => {
             this.goods = response.data.goods;
             this.$nextTick(() => {
             	this._initScroll();
@@ -83,10 +85,12 @@ export default {
     			}
     		}
     		return 0;
-    	},
+    	}
+    	
+    },
     	
 
-	},
+	
     methods:{
     	// foodlist 的 height 的高度变化 自动触发计算属性 currentIndex的变化
     	selectMenu(index) {
@@ -101,6 +105,13 @@ export default {
     		this.foodsScroll.scrollToElement(el,10);
 
     	},
+    	selectFood(food, event) {
+        if (!event._constructed) {
+          return;
+        }
+        this.selectedFood = food;
+        this.$refs.food.show();
+      },
     	// 初始化 better-scroll
     	_initScroll() {
     		this.menuScroll = new BScroll(this.$refs.menuWrapper,{
@@ -146,107 +157,110 @@ export default {
     	}
 
     	
+    },
+    components: {
+
+      food
     }
+
+
 }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
 @import "../../common/mixin.styl"
 .goods
-	position:absolute
-	top:40px
-	bottom:46px
-	display:flex
-	width:100%
-	overflow:hidden
-	.menu-wrapper{
-		// flex布局左栏固定
-		flex:0 0 80px
-		width:80px
-		background-color:#f4f5f7
-		.menu-item{
-			// 用于垂直居中
-			display:table
-			width:56px
-			height:54px
-			//background-color:#f3f5f7
-			background-color:red
-			padding:0 12px
-			line-height:14px
-			&.current{
-				position: relative
-		        z-index: 10
-		        margin-top: -1px
-		        background: #fff
-		        font-weight: 700
-			}
-			.text{
-				// 垂直居中 table-cell vertical-align
-				display: table-cell;
-			    width: 56px;
-			    vertical-align: middle;
-			    position: relative;
-			    font-size: 12px;
-			    border-1px(rgba(7,17,27,0.1))
-
-			    .icon{
-					display:inline-block
-					vertical-align:top
-					position:relative
-					width:12px
-					height:12px
-					margin-right:2px
-					background-size:12px 12px
-					background-repeat:no-repeat
-
-					
-			}
-
-
-		}
-	}
-
-	.foods-wrapper{
-		flex:1
-		.title{
-			padding-left:14px
-			height:26px
-			font-size:12px
-			line-height:26px
-			color:rgb(147,153,159)
-			background-color:#f3f5f7
-			border-left:2px solid #d9dde1
-		}
-		.food-item{
-			display:flex
-			margin:18px
-			padding-bottom:18px
-			border-1px(rgba(7,17,27,0.1))
-			&:last-child{
-				border-none()
-				margin-bottom:0
-			}
-			.icon{
-				flex:0 0 57px
-				margin-right:18px
-				float:left
-			}
-			.content{
-				flex:1
-				float:left
-				.name{
-					margin:2px 0 8px 0
-					line-height:14px
-					color:rgb(7,17,27)
-					font-size:14px
-				}
-				.cart-wrapper{
-					position:absolute
-					right:0
-					bottom:12px
-				}
-			}
-		}
-	}
-}
+    display: flex
+    position: absolute
+    top: 40px
+    bottom: 46px
+    width: 100%
+    overflow: hidden
+    .menu-wrapper
+      flex: 0 0 80px
+      width: 80px
+      background: red
+      .menu-item
+        display: table
+        height: 54px
+        width: 56px
+        padding: 0 12px
+        line-height: 14px
+        &.current
+          position: relative
+          z-index: 10
+          margin-top: -1px
+          background: #fff
+          font-weight: 700
+          .text
+            border-none()
+        .icon
+          display: inline-block
+          vertical-align: top
+          width: 12px
+          height: 12px
+          margin-right: 2px
+          background-size: 12px 12px
+          background-repeat: no-repeat
+          
+        .text
+          display: table-cell
+          width: 56px
+          vertical-align: middle
+          border-1px(rgba(7, 17, 27, 0.1))
+          font-size: 12px
+    .foods-wrapper
+      flex: 1
+      .title
+        padding-left: 14px
+        height: 26px
+        line-height: 26px
+        border-left: 2px solid #d9dde1
+        font-size: 12px
+        color: rgb(147, 153, 159)
+        background: #f3f5f7
+      .food-item
+        display: flex
+        margin: 18px
+        padding-bottom: 18px
+        border-1px(rgba(7, 17, 27, 0.1))
+        &:last-child
+          border-none()
+          margin-bottom: 0
+        .icon
+          flex: 0 0 57px
+          margin-right: 10px
+        .content
+          flex: 1
+          .name
+            margin: 2px 0 8px 0
+            height: 14px
+            line-height: 14px
+            font-size: 14px
+            color: rgb(7, 17, 27)
+          .desc, .extra
+            line-height: 10px
+            font-size: 10px
+            color: rgb(147, 153, 159)
+          .desc
+            line-height: 12px
+            margin-bottom: 8px
+          .extra
+            .count
+              margin-right: 12px
+          .price
+            font-weight: 700
+            line-height: 24px
+            .now
+              margin-right: 8px
+              font-size: 14px
+              color: rgb(240, 20, 20)
+            .old
+              text-decoration: line-through
+              font-size: 10px
+              color: rgb(147, 153, 159)
+          .cartcontrol-wrapper
+            position: absolute
+            right: 0
+            bottom: 12px
 </style>
