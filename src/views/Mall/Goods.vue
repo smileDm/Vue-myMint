@@ -23,7 +23,7 @@
 							</div>
 							<div class="content">
 								<div class="name">{{food.name}}</div>
-							    <div class="price">20</div>           		
+							    <div class="price">{{food.price}}</div>           		
 							</div>
 						</div>
 					
@@ -62,7 +62,7 @@ export default {
 		//利用 mock.js 模拟的数据用来请求
 
 		//this.$http.get('https://www.easy-mock.com/mock/596e2463a1d30433d836f112/ele/ele').then((response) => {
-		this.$http.get('http://www.easy-mock.com/mock/5993aee4a1d30433d863147b/goods/goods').then((response) => {
+		this.$http.get('http://www.easy-mock.com/mock/599aec4b059b9c566dca1f41/goods/dm').then((response) => {
             this.goods = response.data.goods;
             this.$nextTick(() => {
             	this._initScroll();
@@ -179,13 +179,14 @@ export default {
     .menu-wrapper
       flex: 0 0 80px
       width: 80px
-      background: red
+      background: #e6e7e8
       .menu-item
         display: table
         height: 54px
         width: 56px
-        padding: 0 12px
+        padding: 0 14px
         line-height: 14px
+        text-align: center
         &.current
           position: relative
           z-index: 10
