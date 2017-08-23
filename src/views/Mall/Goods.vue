@@ -30,8 +30,8 @@
 				</li>
 			</ul>
 		</div>
-		<router-link  to="/food">
-			<food :food="selectedFood" ref="food"></food>
+		<router-link to=" ">
+			<Clothes :food="selectedFood" ref="food"></Clothes>
 		</router-link>
 	</div>
 	
@@ -40,7 +40,7 @@
 <script type="text/ecmascript-6">
 // 引入better-scroll
 import BScroll from 'better-scroll'
-import food from './food';
+import Clothes from './Clothes';
 
 export default {
 	props:['seller'],
@@ -110,7 +110,7 @@ export default {
           return;
         }
         this.selectedFood = food;
-        this.$refs.food.show();
+        this.$refs.food.show();//展示
       },
     	// 初始化 better-scroll
     	_initScroll() {
@@ -160,7 +160,7 @@ export default {
     },
     components: {
 
-      food
+      Clothes
     }
 
 

@@ -1,6 +1,13 @@
 <template>
   <transition name="move">
     <div v-show="showFlag" class="food" ref="food">
+    <div>
+    	<mt-header title="商城"  style="background:#fb8a2e">  
+          <router-link to="/Mall" slot="left">  
+            <mt-button icon="back" @click="handleClose"></mt-button>  
+          </router-link>  
+        </mt-header>
+      </div>
       <div class="food-content">
         <div class="image-header">
           <img :src="food.image">
@@ -28,9 +35,6 @@
         <split></split>
         <div class="rating">
           <h1 class="title">商品评价</h1>
-          <ratingselect @select="selectRating" @toggle="toggleContent" :selectType="selectType"
-                        :onlyContent="onlyContent" :desc="desc"
-                        :ratings="food.ratings"></ratingselect>
           <div class="rating-wrapper">
             <ul v-show="food.ratings && food.ratings.length">
               <li v-show="needShow(rating.rateType,rating.text)" v-for="rating in food.ratings"
@@ -81,6 +85,12 @@
       };
     },
     methods: {
+      handleClose: function(){  
+        console.log("返回")  
+    	},  
+    	more: function(){  
+        console.log("更多")  
+    	},
       show() {
         this.showFlag = true;
         this.selectType = ALL;
@@ -160,26 +170,26 @@
       transition: all 0.2s linear
     &.move-enter, &.move-leave-active
       transform: translate3d(100%, 0, 0)
-    .image-header
-      position: relative
-      width: 100%
-      height: 0
-      padding-top: 100%
-      img
-        position: absolute
-        top: 0
-        left: 0
-        width: 100%
-        height: 100%
-      .back
-        position: absolute
-        top: 10px
-        left: 0
-        .icon-arrow_lift
-          display: block
-          padding: 10px
-          font-size: 20px
-          color: #fff
+    	.image-header
+    	  position: relative
+    	  width: 100%
+    	  height: 0
+    	  padding-top: 100%
+    	  img
+    	    position: absolute
+    	    top: 0
+    	    left: 0
+    	    width: 100%
+    	    height: 100%
+    	  .back
+    	    position: absolute
+    	    top: 10px
+    	    left: 0
+    	    .icon-arrow_lift
+    	      display: block
+    	      padding: 10px
+    	      font-size: 20px
+    	      color: #fff
 
     .content
       position: relative
