@@ -1,18 +1,13 @@
 <template>
   <transition name="move">
     <div v-show="showFlag" class="food" ref="food">
-    <div>
-    	<mt-header title="商城"  style="background:#fb8a2e">  
-          <router-link to="/Mall" slot="left">  
-            <mt-button icon="back" @click="handleClose"></mt-button>  
-          </router-link>  
-        </mt-header>
-      </div>
       <div class="food-content">
         <div class="image-header">
           <img :src="food.image">
           <div class="back" @click="hide">
-            <i class="icon-arrow_lift"></i>
+            <div class="icon-arrow_lift">
+            	<img src="../../assets/img/mall/return.jpg" style="margin-left:10px;"/>
+            </div>
           </div>
         </div>
         <div class="content">
@@ -85,9 +80,10 @@
       };
     },
     methods: {
-      handleClose: function(){  
-        console.log("返回")  
-    	},  
+      	close() {
+      	this.$router.push({path:'/Zhuye'})
+      	console.log("关掉")
+    	},
     	more: function(){  
         console.log("更多")  
     	},
@@ -188,8 +184,10 @@
     	    .icon-arrow_lift
     	      display: block
     	      padding: 10px
+    	      margin-left10px
     	      font-size: 20px
-    	      color: #fff
+    	      color: #000
+    	      margin:0px
 
     .content
       position: relative

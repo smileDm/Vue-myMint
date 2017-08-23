@@ -5,7 +5,7 @@
  					<span class="icon icon-home"></span>
  				 <p class="home_text">主页</p>
  			</router-link>
-		  
+		    
 		  <router-link  to="Personal" tag="li">
 				<span class="icon icon-info"></span>
 			 	<p class="home_text">我的</p>
@@ -67,7 +67,7 @@ export default{
 	  background-position: center center;
 	}
 	.icon-find{
-	 background: url('../../assets/img/tabbar/mall_gray.png') no-repeat;
+	 background: url('../../assets/img/tabbar/find_gray.png') no-repeat;
 	  background-position: center center;
 	}
 	.icon-info{
@@ -79,7 +79,7 @@ export default{
 	  background-position: center center;
 	}
 	.router-link-active .icon-find {
-	  background: url('../../assets/img/tabbar/mall_orange.png')no-repeat;
+	  background: url('../../assets/img/tabbar/find_orange.png')no-repeat;
 	  background-position: center center;
 	}
 	.router-link-active .icon-info {

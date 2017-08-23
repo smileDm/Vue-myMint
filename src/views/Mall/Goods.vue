@@ -30,9 +30,9 @@
 				</li>
 			</ul>
 		</div>
-		<router-link to=" ">
-			<Clothes :food="selectedFood" ref="food"></Clothes>
-		</router-link>
+		
+		<Clothes :food="selectedFood" ref="food"></Clothes>
+		
 	</div>
 	
 </template>
@@ -179,7 +179,6 @@ export default {
     .menu-wrapper
       flex: 0 0 80px
       width: 80px
-      background: #f0f0f0
       .menu-item
         display: table
         height: 54px
@@ -191,7 +190,7 @@ export default {
           position: relative
           z-index: 10
           margin-top: -1px
-          background: #fff
+          color: #fc9c4e
           font-weight: 700
           .text
             border-none()
@@ -218,7 +217,7 @@ export default {
         line-height: 26px
         border-left: 2px solid #d9dde1
         font-size: 12px
-        color: rgb(147, 153, 159)
+        color: #000
         background: #f3f5f7
       .food-item
         display: flex
@@ -238,7 +237,7 @@ export default {
             height: 14px
             line-height: 14px
             font-size: 14px
-            color: rgb(7, 17, 27)
+            color: #000
           .desc, .extra
             line-height: 10px
             font-size: 10px
@@ -250,8 +249,8 @@ export default {
             .count
               margin-right: 12px
           .price
-            font-weight: 700
             line-height: 24px
+            color:#999
             .now
               margin-right: 8px
               font-size: 14px
