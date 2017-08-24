@@ -5,7 +5,10 @@
  					<span class="icon icon-home"></span>
  				 <p class="home_text">主页</p>
  			</router-link>
-		    
+		    <router-link  to="Find" tag="li">
+				<span class="icon icon-find"></span>
+			 	<p class="home_text">发现时尚</p>
+		  </router-link>
 		  <router-link  to="Personal" tag="li">
 				<span class="icon icon-info"></span>
 			 	<p class="home_text">我的</p>

@@ -1,0 +1,13 @@
+html{
+	font-size:10px;
+}
+.navbar{
+		position: absolute;
+		top: 7%;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+	
