@@ -24,8 +24,32 @@
 				<span class="Chinese">| 好物+搭配</span>
 			</div>
 			<div class="introduce">
-				<img src="https://img30.360buyimg.com/popWaterMark/jfs/t7129/177/1370921641/690505/6d3b7643/598aaeabN0ee427ed.jpg" alt="">
+				<img class="big_img" src="https://img30.360buyimg.com/popWaterMark/jfs/t7129/177/1370921641/690505/6d3b7643/598aaeabN0ee427ed.jpg" alt="">
+				<div class="wenzi">
+					<div class="title">酷爱少女范，CHIC穿搭指南</div>
+					<br>
+					<div class="title_num">
+						<span class="title_one">短外套</span>+
+						<span class="title_two">连帽卫衣</span>+
+						<span class="title_three">牛仔裤</span>
+					</div>
+					<br>
+					<span class="clothes_introduce">
+						秋壳是汇美集团旗下的原创少女品牌,产品设计充满趣味并强调个性，力求表现少女“童真”“勇敢”的本性。
+					</span>
+				</div>
 			</div>
+			<div class="product">
+				<img src="https://m.360buyimg.com/n12/s750x750_jfs/t6799/343/2273017619/219129/d2075356/598aae9cNe56a01a0.jpg!q70.jpg">
+				<img src="https://m.360buyimg.com/n12/s750x750_jfs/t5719/36/9700689872/340340/be2f7265/598991abN8966e780.jpg!q70.jpg">
+				<img src="https://m.360buyimg.com/n12/s750x750_jfs/t5872/77/9771204718/284811/7f1428e8/59896852Nf2e2c027.jpg!q70.jpg">
+			</div>
+			<div class="product">
+				<img src="https://m.360buyimg.com/n12/s750x750_jfs/t6799/343/2273017619/219129/d2075356/598aae9cNe56a01a0.jpg!q70.jpg">
+				<img src="https://m.360buyimg.com/n12/s750x750_jfs/t5719/36/9700689872/340340/be2f7265/598991abN8966e780.jpg!q70.jpg">
+				<img src="https://m.360buyimg.com/n12/s750x750_jfs/t5872/77/9771204718/284811/7f1428e8/59896852Nf2e2c027.jpg!q70.jpg">
+			</div>
+			
 			<div class="clothes">
 				
 			</div>
@@ -41,6 +65,15 @@
 	html{
 		font-size: 10px;
 	}
+	.fashion{
+		position:absolute;
+		top:6%;
+		bottom:10%;
+		left:0;
+		right:0;
+		overflow-y: scroll;
+	    overflow-x: hidden;
+	}
 	.header{
 		background: red;
 		padding:0 0 0 2%;
@@ -49,6 +82,9 @@
 		font-size: 1.4rem;
 		text-align: center;
 		margin: 2% 0 2% 0;
+	}
+	.introduce{
+		width:100%;
 	}
 	.title .English{
 		font-weight: bolder;
@@ -62,7 +98,34 @@
 		background: red;
 	}
 	.content .introduce img{
-		width: 40%;
-		
+		width: 40%;	
+	}
+	.big_img{
+		float:left;
+		width:40%;
+	}
+	.wenzi{
+		float:left;
+		width:55%;
+		padding:5% 2% 8.5% 2%;
+	}
+	.wenzi .title{
+		font-size:1.3rem;
+	}
+	.title_num{
+		margin:0 0 5% 0;
+		text-align:center;
+	}
+	.title_one,.title_two,.title_three{
+		background:#8e8e8e;
+		padding:0.5% 2.5% 0.5% 2.5%;
+		color:white;
+	}
+	.wenzi .clothes_introduce{
+		line-height:1.2rem;
+	}
+	.product img{
+		width:32%;
+		height:32%;
 	}
 </style>
