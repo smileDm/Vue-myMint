@@ -18,11 +18,11 @@
 				<img src="//m.360buyimg.com/babel/s149x207_jfs/t5593/156/7204543616/9461/930c2c0a/596eceb9Na3411cfa.jpg!q50.jpg.webp" alt="">
 			</div>
 		</div>
+		<div class="title">
+			<span class="English"><b>COLLOCATION</b></span>
+			<span class="Chinese">| 好物+搭配</span>
+		</div>
 		<div class="content">
-			<div class="title">
-				<span class="English"><b>COLLOCATION</b></span>
-				<span class="Chinese">| 好物+搭配</span>
-			</div>
 			<div class="introduce">
 				<img class="big_img" src="https://img30.360buyimg.com/popWaterMark/jfs/t7129/177/1370921641/690505/6d3b7643/598aaeabN0ee427ed.jpg" alt="">
 				<div class="wenzi">
@@ -43,17 +43,20 @@
 				<img src="https://m.360buyimg.com/n12/s750x750_jfs/t6799/343/2273017619/219129/d2075356/598aae9cNe56a01a0.jpg!q70.jpg">
 				<img src="https://m.360buyimg.com/n12/s750x750_jfs/t5719/36/9700689872/340340/be2f7265/598991abN8966e780.jpg!q70.jpg">
 				<img src="https://m.360buyimg.com/n12/s750x750_jfs/t5872/77/9771204718/284811/7f1428e8/59896852Nf2e2c027.jpg!q70.jpg">
-			</div>
-			<div class="product">
-				<img src="https://m.360buyimg.com/n12/s750x750_jfs/t6799/343/2273017619/219129/d2075356/598aae9cNe56a01a0.jpg!q70.jpg">
-				<img src="https://m.360buyimg.com/n12/s750x750_jfs/t5719/36/9700689872/340340/be2f7265/598991abN8966e780.jpg!q70.jpg">
-				<img src="https://m.360buyimg.com/n12/s750x750_jfs/t5872/77/9771204718/284811/7f1428e8/59896852Nf2e2c027.jpg!q70.jpg">
-			</div>
-			
+			</div>		
 			<div class="clothes">
-				
+				<span class="clothes_one">正反两穿短外套</span>+
+				<span class="clothes_two">运动风连帽卫衣</span>+
+				<span class="clothes_three">个性破洞牛仔裤</span>
+			</div>
+
+			<div class="price">
+				<span class="price_one">￥325.00</span>
+				<span class="price_two">￥199.00</span>
+				<span class="price_three">￥179.00</span>
 			</div>
 		</div>
+		
 	</div>
 </template>
 
@@ -67,7 +70,7 @@
 	}
 	.fashion{
 		position:absolute;
-		top:6%;
+		top:7%;
 		bottom:10%;
 		left:0;
 		right:0;
@@ -75,13 +78,12 @@
 	    overflow-x: hidden;
 	}
 	.header{
-		background: red;
 		padding:0 0 0 2%;
 	}
 	.title{
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 		text-align: center;
-		margin: 2% 0 2% 0;
+		margin: 3% 0 3% 0;
 	}
 	.introduce{
 		width:100%;
@@ -95,14 +97,12 @@
 	}
 	.content{
 		padding:0 0 0 2%;
-		background: red;
 	}
 	.content .introduce img{
 		width: 40%;	
 	}
 	.big_img{
 		float:left;
-		width:40%;
 	}
 	.wenzi{
 		float:left;
@@ -122,10 +122,30 @@
 		color:white;
 	}
 	.wenzi .clothes_introduce{
-		line-height:1.2rem;
+		line-height:1.4rem;
+	}
+	.product{
+		position:relative;
+		left:50%;
+		margin-left:-50%;
+		width:100%;
 	}
 	.product img{
 		width:32%;
 		height:32%;
+	}
+	.clothes{
+		text-align:center;
+	}
+	.clothes_one,.clothes_two,.clothes_three{
+		margin:0.3rem;	
+	}
+	.price{
+		text-align:center;
+		margin-top:0.5rem;
+	}
+	.price_one,.price_two,.price_three{
+		margin:2rem;
+		color:#666;
 	}
 </style>
