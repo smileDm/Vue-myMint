@@ -1,5 +1,6 @@
 <template>
-		<div class="footer">
+	<!--底部按钮-->
+	<div class="footer">
 		 <nav class="bottombar">
 			<router-link  to="/Zhuye"  exact tag="li">
  					<span class="icon icon-home"></span>

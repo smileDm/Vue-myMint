@@ -1,4 +1,5 @@
 <template>
+<!--登录界面-->
 	<div class="login">
 		<img class="close" src="../assets/img/login/close.png" alt="close">
 		<div>

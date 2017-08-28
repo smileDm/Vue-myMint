@@ -1,4 +1,5 @@
 <template>
+<!--时尚内容-->
 	<div class="fashion">
 		<div class="header">
 			<div class="title">
@@ -57,6 +58,76 @@
 			</div>
 		</div>
 		
+		<div class="content">
+			<div class="introduce">
+				<img class="big_img" src="https://img30.360buyimg.com/popWaterMark/jfs/t7129/177/1370921641/690505/6d3b7643/598aaeabN0ee427ed.jpg" alt="">
+				<div class="wenzi">
+					<div class="title">酷爱少女范，CHIC穿搭指南</div>
+					<br>
+					<div class="title_num">
+						<span class="title_one">短外套</span>+
+						<span class="title_two">连帽卫衣</span>+
+						<span class="title_three">牛仔裤</span>
+					</div>
+					<br>
+					<span class="clothes_introduce">
+						秋壳是汇美集团旗下的原创少女品牌,产品设计充满趣味并强调个性，力求表现少女“童真”“勇敢”的本性。
+					</span>
+				</div>
+			</div>
+			<div class="product">
+				<img src="https://m.360buyimg.com/n12/s750x750_jfs/t6799/343/2273017619/219129/d2075356/598aae9cNe56a01a0.jpg!q70.jpg">
+				<img src="https://m.360buyimg.com/n12/s750x750_jfs/t5719/36/9700689872/340340/be2f7265/598991abN8966e780.jpg!q70.jpg">
+				<img src="https://m.360buyimg.com/n12/s750x750_jfs/t5872/77/9771204718/284811/7f1428e8/59896852Nf2e2c027.jpg!q70.jpg">
+			</div>		
+			<div class="clothes">
+				<span class="clothes_one">正反两穿短外套</span>+
+				<span class="clothes_two">运动风连帽卫衣</span>+
+				<span class="clothes_three">个性破洞牛仔裤</span>
+			</div>
+
+			<div class="price">
+				<span class="price_one">￥325.00</span>
+				<span class="price_two">￥199.00</span>
+				<span class="price_three">￥179.00</span>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="introduce">
+				<img class="big_img" src="https://img30.360buyimg.com/popWaterMark/jfs/t7129/177/1370921641/690505/6d3b7643/598aaeabN0ee427ed.jpg" alt="">
+				<div class="wenzi">
+					<div class="title">酷爱少女范，CHIC穿搭指南</div>
+					<br>
+					<div class="title_num">
+						<span class="title_one">短外套</span>+
+						<span class="title_two">连帽卫衣</span>+
+						<span class="title_three">牛仔裤</span>
+					</div>
+					<br>
+					<span class="clothes_introduce">
+						秋壳是汇美集团旗下的原创少女品牌,产品设计充满趣味并强调个性，力求表现少女“童真”“勇敢”的本性。
+					</span>
+				</div>
+			</div>
+			<div class="product">
+				<img src="https://m.360buyimg.com/n12/s750x750_jfs/t6799/343/2273017619/219129/d2075356/598aae9cNe56a01a0.jpg!q70.jpg">
+				<img src="https://m.360buyimg.com/n12/s750x750_jfs/t5719/36/9700689872/340340/be2f7265/598991abN8966e780.jpg!q70.jpg">
+				<img src="https://m.360buyimg.com/n12/s750x750_jfs/t5872/77/9771204718/284811/7f1428e8/59896852Nf2e2c027.jpg!q70.jpg">
+			</div>		
+			<div class="clothes">
+				<span class="clothes_one">正反两穿短外套</span>+
+				<span class="clothes_two">运动风连帽卫衣</span>+
+				<span class="clothes_three">个性破洞牛仔裤</span>
+			</div>
+
+			<div class="price">
+				<span class="price_one">￥325.00</span>
+				<span class="price_two">￥199.00</span>
+				<span class="price_three">￥179.00</span>
+			</div>
+		</div>
+
 	</div>
 </template>
 

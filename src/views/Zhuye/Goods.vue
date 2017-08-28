@@ -1,4 +1,5 @@
 <template>
+<!--首页商品展示-->
     <div class="goods">
     	<div class="hot">
     		<div class="hot_title">
