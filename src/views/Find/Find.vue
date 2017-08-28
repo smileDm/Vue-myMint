@@ -7,13 +7,16 @@
           </router-link>  
         </mt-header>
 		<app-fashion></app-fashion>
+
         <app-tabbar></app-tabbar>	
+       
 	</div>
 </template>
 
 <script>
 import Fashion from './Fashion'
 import Tabbar1 from '../../views/Zhuye/Tabbar1'
+
 	export default{
 		methods:{
 			handleClose:function(){

@@ -11,6 +11,8 @@ import axios from  'axios'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 import VueResource from "vue-resource"
+import iView from 'iview';
+import 'iview/dist/styles/iview.css'; 
 
 
 Vue.use(VueResource);
@@ -19,6 +21,7 @@ Vue.prototype.axios = axios
 Vue.use(MintUI)
 Vue.use(Vuex)
 Vue.use(ElementUI)
+Vue.use(iView)
 
 /* eslint-disable no-new */
 new Vue({

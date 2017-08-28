@@ -53,6 +53,7 @@
   .img_upload{
   	position:relative;
   	left:50%;
+    width:6rem;
   	margin:4rem 0 0 -3rem;
   }
   /* 上传图片 */

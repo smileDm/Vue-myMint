@@ -2,8 +2,6 @@
 	<div class="personal">
 	    <!-- 固定在最顶部 -->
 	    <mt-header title="我的" style='background-color: #fb8a2e'>  
-	        <router-link to="/" slot="left">  
-	        </router-link>
 	    </mt-header>
 	    <app-img></app-img>
 	    <app-listview></app-listview>

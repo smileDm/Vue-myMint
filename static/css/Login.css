@@ -8,12 +8,14 @@ html{
  .close{
  	width: 2.5rem;
  	height:2.5rem;
- 	margin-left: -92%;
  } 
  .logo{
  	width:5rem;
  	height: 5rem;
  	margin: 20% 0 20% 0;
+  position: relative;
+  margin-left: -2.5rem;
+  left:50%;
  }
  .input{
  	border-bottom: 0.1rem solid #bfbfbf;
@@ -40,6 +42,10 @@ html{
 .login_btn{
 	width: 20rem;
 	background-color: #fb6133;
+  position: relative;
+  left: 50%;
+  margin-left: -10rem;
+  left:50%;
 }
 /* .other{
 	margin-top: 10rem;
@@ -79,4 +85,10 @@ html{
 } 
 .other_img{
 	margin-left: 2rem;
+}
+.tu{
+  position: relative;
+  left:50%;
+  width: 50%;
+  margin-left: -25%;
 }

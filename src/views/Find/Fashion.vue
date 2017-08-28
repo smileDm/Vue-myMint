@@ -127,18 +127,35 @@
 				<span class="price_three">￥179.00</span>
 			</div>
 		</div>
+		
+		 <BackTop></BackTop>
 
 	</div>
 </template>
 
 <script>
-	
+	import GoTop from './GoTop'
+	export default{
+		components:{
+			'BackTop':GoTop
+		}
+	}
 </script>
 
 <style>
 	html{
 		font-size: 10px;
 	}
+	.top{
+        border-radius: 2px;
+        width: 10rem;
+        height: 10rem;
+        background:red;
+        background-size: 10rem 10rem;
+    }
+    .gotop{
+        height:10rem;
+    }
 	.fashion{
 		position:absolute;
 		top:7%;
