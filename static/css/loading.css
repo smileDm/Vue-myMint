@@ -53,7 +53,7 @@ input{
   height: 25px;
   float: right;
   color: #fff;
-  background-color: red;
+  background-color: #fb6133;
 }
 .loading{
   width: 100%;
@@ -105,7 +105,7 @@ input{
   border-radius: 5px;
   font-size: 17px;
   color: #fff;
-  background-color: #ff2d2d;
+  background-color: #fb6133;
 }
 .use{
   margin: 0;
@@ -176,4 +176,5 @@ input{
   color: white;
   opacity: .5;
   background-color:black;
+  text-align:center;
 }

@@ -9,8 +9,7 @@
 			  :on-success="handleAvatarSuccess"
 			  :before-upload="beforeAvatarUpload">
 			  <img v-if="imageUrl" :src="imageUrl" class="avatar">
-			  <i v-else class="el-icon-plus avatar-uploader-icon"></i>
-			  <!--<img src="../../assets/img/personal/girl.jpg" v-else class="el-icon-plus avatar-uploader-icon"></img> -->
+			  <img src="../../assets/img/personal/girl.jpg" v-else class="el-icon-plus avatar-uploader-icon"></img>
 			</el-upload>
 		</div>
 			<!-- 昵称 -->
@@ -53,7 +52,6 @@
   .img_upload{
   	position:relative;
   	left:50%;
-    width:6rem;
   	margin:4rem 0 0 -3rem;
   }
   /* 上传图片 */

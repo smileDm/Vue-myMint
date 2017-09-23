@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="loading" id="loading">
-    <img class="close" @click="close" src="./../assets/img/login/close.png" alt="">
+<!--     <img class="close" @click="close" src="./../assets/img/login/close.png" alt=""> -->
     <span class="logo"><img class="bantang_logo" src="./../assets/img/login/logo.png" alt=""></span>
     <form action="">
       <span class="input">
@@ -17,7 +17,6 @@
           快速登录
         </button>
     </form>
-    <p class="use">使用手机号和密码登录</p>
     <span class="message" display="none" v-if="info" v-model="message">{{'短信校验码为: '+message}}</span>
     <span class="others">其他登录方式</span>
     <ul class="methods">

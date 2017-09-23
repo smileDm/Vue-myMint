@@ -1,6 +1,5 @@
 <template>
-	<!--底部按钮-->
-	<div class="footer">
+		<div class="footer">
 		 <nav class="bottombar">
 			<router-link  to="/Zhuye"  exact tag="li">
  					<span class="icon icon-home"></span>
@@ -14,6 +13,10 @@
 				<span class="icon icon-info"></span>
 			 	<p class="home_text">我的</p>
 		  </router-link>
+		  <!-- <router-link  :to="isLogin" tag="li">
+		  				<span class="icon icon-info"></span>
+		  			 	<p class="home_text">我的</p>
+		  </router-link> -->
 		</nav>
 	</div>
 

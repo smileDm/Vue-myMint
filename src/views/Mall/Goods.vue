@@ -61,6 +61,7 @@ export default {
 		this.classMap = ['decrease','discount','guarantee','invoice','special'];
 		//利用 mock.js 模拟的数据用来请求
 
+		//this.$http.get('https://www.easy-mock.com/mock/596e2463a1d30433d836f112/ele/ele').then((response) => {
 		this.$http.get('http://www.easy-mock.com/mock/599aec4b059b9c566dca1f41/goods/dm').then((response) => {
             this.goods = response.data.goods;
             this.$nextTick(() => {
@@ -72,10 +73,10 @@ export default {
 
     },
     computed: {
-    	//根据列表所处的位置，判断菜单的class
+    	//根据食物列表所处的位置，判断菜单的class
     	currentIndex() {
     		for(var i=0; i<this.listHeight.length; i++){
-    			// 判断商品栏处于第几个位置
+    			// 判断菜单栏处于第几个位置
     			let height1 = this.listHeight[i];
     			let height2 = this.listHeight[i+1];
 

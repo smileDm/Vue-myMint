@@ -6,11 +6,18 @@
             <mt-button icon="back" @click="handleClose"></mt-button>  
           </router-link>  
         </mt-header>
+	    <!-- 商城左边部分 -->
+	    <!--<app-leftmall></app-leftmall>
+	    <app-watch></app-watch>-->
 	    <app-goods></app-goods>
+	    <!-- <app-tabbar></app-tabbar> -->
 	</div>
 </template>
 
 <script>
+	//import LeftMall from './LeftMall'
+	//import watch from './watch'
+	/*import Tabbar1 from '../../views/Zhuye/Tabbar1'*/
 	import Goods from './Goods'
 	import BScroll from 'better-scroll';
 
@@ -23,6 +30,9 @@
 		   
 		},
 		components:{
+			//'app-leftmall':LeftMall,
+			//'app-watch':watch,
+			/*'app-tabbar':Tabbar1,*/
 			'app-goods':Goods
 		}
 	}

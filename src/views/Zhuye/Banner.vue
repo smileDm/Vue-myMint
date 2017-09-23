@@ -1,6 +1,6 @@
 <template>
     <div class="banner"><!--需要在最外层包一个div，否则会报错-->
-        <!-- 首页轮播 -->
+        <!-- 轮播 -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" v-for="str in listImg" :style="{ backgroundImage: 'url(' + str.url + ')' }"></div>
