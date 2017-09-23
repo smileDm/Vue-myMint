@@ -1,6 +1,8 @@
 # mymint
 
-> A Vue.js project
+> 基于Vue2.0购物系统移动端
+
+![Image text](https://github.com/dingMiao/Vue-myMint/blob/master/src/assets/md/md_1.jpg)
 
 ## Build Setup
 
