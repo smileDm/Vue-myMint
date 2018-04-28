@@ -1,6 +1,25 @@
 # mymint
 
-> A Vue.js project
+> 基于Vue2.0购物系统移动端
+
+![Image text](https://github.com/dingMiao/Vue-myMint/blob/master/src/assets/md/md_1.jpg)
+![Image text](https://github.com/dingMiao/Vue-myMint/blob/master/src/assets/md/md_2.jpg)
+![Image text](https://github.com/dingMiao/Vue-myMint/blob/master/src/assets/md/md_3.jpg)
+
+>搜索
+
+![Image text](https://github.com/dingMiao/Vue-myMint/blob/master/src/assets/md/md_4.jpg)
+![Image text](https://github.com/dingMiao/Vue-myMint/blob/master/src/assets/md/md_5.jpg)
+
+>商城
+
+![Image text](https://github.com/dingMiao/Vue-myMint/blob/master/src/assets/md/md_6.jpg)
+![Image text](https://github.com/dingMiao/Vue-myMint/blob/master/src/assets/md/md_7.jpg)
+
+>登录
+
+![Image text](https://github.com/dingMiao/Vue-myMint/blob/master/src/assets/md/md_8.jpg)
+![Image text](https://github.com/dingMiao/Vue-myMint/blob/master/src/assets/md/md_9.jpg)
 
 ## Build Setup
 

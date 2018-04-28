@@ -4,7 +4,7 @@
 		<div v-show='show' class="pagecover" @click='hide'></div>
 	    <mt-header title="发现时尚"  style="background:#fb8a2e">  
           <router-link to="/Zhuye" slot="left">  
-            <mt-button icon="back" @click="handleClose"></mt-button>
+            <!--<mt-button icon="back" @click="handleClose"></mt-button> -->
           </router-link>  
         </mt-header>
 		<app-fashion></app-fashion>	
