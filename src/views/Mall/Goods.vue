@@ -61,8 +61,7 @@ export default {
 		this.classMap = ['decrease','discount','guarantee','invoice','special'];
 		//利用 mock.js 模拟的数据用来请求
 
-		//this.$http.get('https://www.easy-mock.com/mock/596e2463a1d30433d836f112/ele/ele').then((response) => {
-		this.$http.get('http://www.easy-mock.com/mock/599aec4b059b9c566dca1f41/goods/dm').then((response) => {
+		this.$http.get('/api/mock/599aec4b059b9c566dca1f41/goods/dm').then((response) => {
             this.goods = response.data.goods;
             this.$nextTick(() => {
             	this._initScroll();

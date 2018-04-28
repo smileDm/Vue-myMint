@@ -57,6 +57,9 @@
 			</div>
 		</div>
 		
+		
+
+		
 	</div>
 </template>
 
@@ -148,4 +151,5 @@
 		margin:2rem;
 		color:#666;
 	}
+
 </style>

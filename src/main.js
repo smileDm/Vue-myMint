@@ -19,7 +19,6 @@ Vue.prototype.axios = axios
 Vue.use(MintUI)
 Vue.use(Vuex)
 Vue.use(ElementUI)
-
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

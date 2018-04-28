@@ -42,7 +42,7 @@ export default{
 	created () {
 	  this.inputText = this.$store.state.inputText
 	  console.log('hghhhh');
-	 this.axios.get('http://www.easy-mock.com/mock/5993aedca1d30433d8631466/myMint/dMiao')
+	 this.axios.get('/api/mock/5993aedca1d30433d8631466/myMint/dMiao')
 	    .then((res)=>{	       
 	       let message = res.data
 	       for(let i in message){

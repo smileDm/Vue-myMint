@@ -9,6 +9,7 @@ import Tabbar1 from '../views/Zhuye/Tabbar1'
 import MallReSearch from '../views/Mall/MallReSearch'
 import Find from '../views/Find/Find'
 import Fashion from '../views/Find/Fashion'
+import Login from '../views/Login'
 
 
 //import Login from './../views/Login'
@@ -31,6 +32,7 @@ export default new Router({
     { path:'/MallSearch',name:'MallSearch', component:MallSearch },
     { path:'/MallReSearch',name:'MallReSearch', component:MallReSearch },
     { path:'/Find',name:'Find',component:Find},
+    { path:'/Login',name:'Login',component:Login},
     { path:'/Fashion',name:'Fashion',component:Fashion}
   ]
 })
