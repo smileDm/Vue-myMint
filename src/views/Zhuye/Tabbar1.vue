@@ -9,7 +9,7 @@
 				<span class="icon icon-find"></span>
 			 	<p class="home_text">发现时尚</p>
 		  </router-link>
-		  <router-link  to="Personal" tag="li" :to="isLogin">
+		  <router-link  to="Personal" tag="li">
 				<span class="icon icon-info"></span>
 			 	<p class="home_text">我的</p>
 		  </router-link>
@@ -46,12 +46,14 @@ export default{
 		height: 50px;
 		z-index: 10;
 		font-size:0.4rem;
+		border-top: 2px solid #f1f1f1;
 	}
 	.bottombar{
 	  width: 100%;
 		height: 50px;
 	  display: flex;
-	  background-color: #fff;
+		padding-top: 5px;
+	  background-color: #f6f6f6;
 	}
 	.bottombar li{
 		flex: 1;
