@@ -9,7 +9,7 @@
 				<span class="icon icon-find"></span>
 			 	<p class="home_text">发现时尚</p>
 		  </router-link>
-		  <router-link  to="Personal" tag="li">
+		  <router-link  to="Personal" tag="li" :to="isLogin">
 				<span class="icon icon-info"></span>
 			 	<p class="home_text">我的</p>
 		  </router-link>
